@@ -55,7 +55,7 @@ invert_tree/
 |-- build/                              # Compiled binaries
 |-- include/
 |   |-- BinaryTree.h                    # Header file with class definition
-|── src/
+|-- src/
     |-- BinaryTree.cpp                  # Implementation of inversion methods
     |-- main.cpp                        # Entry point and demonstration
 ```
