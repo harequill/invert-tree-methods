@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-  cout << "BINARY TREE INVERSION" << endl;
+  cout << "BINARY TREE INVERSION";
 
   // In-order: 1, 2, 3, 4, 6, 7, 9
   // Sample:
@@ -33,11 +33,16 @@ int main() {
   BinaryTree tree;
   tree.setRoot(root);
 
-  cout << "Original tree:";
+  cout << "\nOriginal tree: ";
   tree.print(tree.getRoot());
 
   tree.invertRecursive(tree.getRoot());
   cout << "\nAfter recursive inversion: ";
+  tree.print(tree.getRoot());
+
+  cout << "\nNow it will return to original format after iterative inversion.";
+  tree.invertIterative(tree.getRoot());
+  cout << "\nAfter iterative inversion: ";
   tree.print(tree.getRoot());
 
   return 0;
